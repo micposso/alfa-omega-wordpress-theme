@@ -29,6 +29,17 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
+	<div class="top-header-">
+		<div class="row">
+			<div class="col-lg-5">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="SpiceJam">
+			</div>
+			<div class="col-lg-7">
+
+			</div>
+		</div>
+	</div>
+
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
